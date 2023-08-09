@@ -1,5 +1,11 @@
+import Gnb from "./component/common/gnb";
+
 function Home() {
-    return <div>hello~</div>;
+    return (
+        <div>
+            <Gnb />
+        </div>
+    );
 }
 
 export default Home;
