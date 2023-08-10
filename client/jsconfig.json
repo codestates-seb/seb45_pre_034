@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl":"./src",
+    "paths": {
+      "@component/*": ["app/component/*"],
+      "@recoil/*": ["app/recoil/*"],
+      "@users/*": ["app/users/*"],
+      "@app/*": ["app/*"],
+      "@/*": ["./*"]
+    }
+  }
+}
