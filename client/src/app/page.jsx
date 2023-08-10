@@ -1,4 +1,4 @@
-import Gnb from "./component/common/Gnb";
+import Gnb from "@component/common/Gnb";
 
 function Home() {
     return (

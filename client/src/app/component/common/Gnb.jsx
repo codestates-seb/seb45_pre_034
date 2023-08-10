@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRecoilValue } from "recoil";
-import { userinfo } from "@/app/recoil/Global";
+import { userinfo } from "@recoil/Global";
 
 function Gnb() {
     const { nickname } = useRecoilValue(userinfo);

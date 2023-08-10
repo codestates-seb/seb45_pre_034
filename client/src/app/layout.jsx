@@ -1,5 +1,5 @@
-import RecoilRootWrapper from "./RecoilRootWrapper";
-import "./globals.css";
+import RecoilRootWrapper from "@app/RecoilRootWrapper";
+import "@app/globals.css";
 
 export const metadata = {
     title: "Stack Overflow",

@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "paths": {
+      "@component/*": ["./src/app/component/*"],
+      "@recoil/*": ["./src/app/recoil/*"],
+      "@users/*": ["./src/app/users/*"],
+      "@app/*": ["./src/app"],
       "@/*": ["./src/*"]
     }
   }
