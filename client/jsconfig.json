@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "baseUrl":"./src",
     "paths": {
-      "@component/*": ["./src/app/component/*"],
-      "@recoil/*": ["./src/app/recoil/*"],
-      "@users/*": ["./src/app/users/*"],
-      "@app/*": ["./src/app"],
-      "@/*": ["./src/*"]
+      "@component/*": ["app/component/*"],
+      "@recoil/*": ["app/recoil/*"],
+      "@users/*": ["app/users/*"],
+      "@app/*": ["app/*"],
+      "@/*": ["./*"]
     }
   }
 }
