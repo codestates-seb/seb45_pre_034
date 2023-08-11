@@ -1,0 +1,35 @@
+.container {
+    width: 164px;
+    padding-top: 24px;
+    color: #525960;
+    font-size: 13px;
+}
+
+.li_item {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.selected {
+    color: #000000;
+    font-weight: 700;
+    background-color: rgb(241, 242, 243);
+    border-right: 3px solid #F48225;
+}
+
+.li_sub_item {
+    display: flex;
+    align-items: flex-end;
+    height: 32px;
+    padding-left: 8px;
+    font-size: 11px;
+}
+
+.items_center {
+    display: flex;
+    align-items: center;
+}
+
