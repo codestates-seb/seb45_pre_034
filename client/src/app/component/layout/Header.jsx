@@ -23,6 +23,14 @@ function Header() {
 
     const { width } = useSceenWidthAndHeight();
 
+    const logoutHandler = () => {
+        setDefaultUserInfo({
+            nickname: "",
+            email: "",
+            profile: "",
+        });
+    };
+
     const renderIconByWidth = () => {
         if (width < 600) {
             return (
