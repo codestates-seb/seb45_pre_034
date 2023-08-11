@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Getter
 public class QuestionPostDto {
     @NotBlank
-    private String nickname;
+    private Integer userId;
 
     @NotBlank(message = "제목은 빈칸으로 둘 수 없습니다.")
     private String title;
