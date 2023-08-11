@@ -7,7 +7,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class AnswerResponseDto {
+public class QuestionAnswerResponseDto {
+    private Integer questionId;
     private Integer answerId;
     private String body;
     private Integer recommend;
