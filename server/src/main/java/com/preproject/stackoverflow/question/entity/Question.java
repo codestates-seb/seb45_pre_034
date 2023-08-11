@@ -25,6 +25,9 @@ public class Question {
     */
 
     @Column(nullable = false)
+    private Integer userId;
+
+    @Column(nullable = false)
     private String title;
 
     @Column(nullable = false)
@@ -33,7 +36,7 @@ public class Question {
     @Column(nullable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 
+
     @Column(nullable = false)
     private LocalDateTime modifiedAt = LocalDateTime.now();
-
 }
