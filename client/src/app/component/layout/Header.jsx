@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { userinfo } from "@recoil/Global";
 
 import { useSceenWidthAndHeight } from "@hook/useScreenWidthAndHeight";
@@ -13,12 +13,14 @@ import SearchInput from "@component/common/SearchInput";
 
 import IconStackOverflow from "/public/icon_stackoverflow.png";
 import IconStackOverflowMini from "/public/icon_stackoverflow_mini.png";
+import IconDefaultUser from "/public/icon_default_user.png";
 import styles from "./Header.module.css";
 
 import { FiMenu } from "react-icons/fi";
 
 function Header() {
-    const { nickname, profile } = useRecoilValue(userinfo);
+    const [defaultUserInfo, setDefaultUserInfo] = useRecoilState(userinfo);
+
     const { width } = useSceenWidthAndHeight();
 
     const renderIconByWidth = () => {
@@ -38,13 +40,18 @@ function Header() {
     };
 
     const renderBtnsByAuth = () => {
-        if (nickname) {
+        if (defaultUserInfo.nickname) {
             return (
                 <>
                     <div className={styles.profile}>
-                        <Image src={profile} width={30} height={30} alt="유저 프로필 사진" />
+                        <Image
+                            src={defaultUserInfo.profile || IconDefaultUser}
+                            width={30}
+                            height={30}
+                            alt="유저 프로필 사진"
+                        />
                     </div>
-                    <Button label="Log out" type="Secondary" />
+                    <Button label="Log out" type="Secondary" onClickHandler={logoutHandler} />
                 </>
             );
         }
