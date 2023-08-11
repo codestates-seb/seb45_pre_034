@@ -1,13 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "item.kakaocdn.net",
-            },
-        ],
-    },
-};
+const nextConfig = {};
+const removeImports = require("next-remove-imports")();
+// module.exports = nextConfig
+module.exports = removeImports({ ...nextConfig });
 
-module.exports = nextConfig;
