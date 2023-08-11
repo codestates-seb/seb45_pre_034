@@ -1,11 +1,7 @@
-import Gnb from "@component/common/Gnb";
+import Layout from "@component/layout/Layout";
 
 function Home() {
-    return (
-        <div>
-            <Gnb />
-        </div>
-    );
+    return <Layout />;
 }
 
 export default Home;
