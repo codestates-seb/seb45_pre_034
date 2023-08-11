@@ -1,8 +1,9 @@
 package com.preproject.stackoverflow.comment.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -10,10 +11,12 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Comment{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer CommentId;
+    private Integer commentId;
     /*
     @ManyToOne
     @JoinColumn(name = "userId")
