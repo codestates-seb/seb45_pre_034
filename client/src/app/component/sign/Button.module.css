@@ -1,5 +1,5 @@
 .btn_container {
-    width: 65px;
+    width: fit-content;
     height: 33px;
     margin-right: 4px;
     padding: 8px 10px;
