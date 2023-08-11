@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
-
-// const removeImports = require('next-remove-imports')();
-// module.exports = removeImports({});
+const nextConfig = {};
+const removeImports = require("next-remove-imports")();
+// module.exports = nextConfig
+module.exports = removeImports({ ...nextConfig });
