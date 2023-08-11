@@ -1,5 +1,5 @@
 import Mde from "@component/common/Mde"
-function QuestionTest() {
+function Questions() {
     
     return (
         <div>
@@ -9,5 +9,5 @@ function QuestionTest() {
     );
 }
 
-export default QuestionTest;
+export default Questions;
 

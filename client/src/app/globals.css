@@ -42,10 +42,10 @@ textarea:active {
     box-shadow: none;
 }
   
-ul,
+/* ul,
 ol,
-li {
+li{
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
-}
+} */
