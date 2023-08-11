@@ -13,10 +13,10 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Comment{
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer CommentId;
+    private Integer commentId;
     /*
     @ManyToOne
     @JoinColumn(name = "userId")
