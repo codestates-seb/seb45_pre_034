@@ -72,17 +72,25 @@ function Header() {
         );
     };
 
+    const renderMenuBtnByAuthAndWidth = () => {
+        if (!defaultUserInfo.nickname || width < 600) {
+            return (
+                <button className={styles.btn_menu}>
+                    <FiMenu size={"1.2rem"} />
+                </button>
+            );
+        }
+    };
+
     return (
-        <div className={styles.container}>
-            <button className={styles.btn_menu}>
-                <FiMenu size={"1.2rem"} />
-            </button>
+        <header className={styles.container}>
+            {renderMenuBtnByAuthAndWidth()}
             <Link href="/">{renderIconByWidth()}</Link>
 
             <SearchInput />
 
             {renderBtnsByAuth()}
-        </div>
+        </header>
     );
 }
 
