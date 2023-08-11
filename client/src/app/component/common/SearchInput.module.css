@@ -1,0 +1,88 @@
+.container {
+    flex: 1;
+    width: 100%;
+    margin: 0 8px;
+    height: 100%;
+}
+
+.mobile_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.btn_mobile_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    padding: 0 4px;
+    background-color: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_mobile_input:hover {
+    background-color: #E2E2E2;
+}
+
+.container_mobile_input {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 8px;
+    background-color: #E2E2E2;
+}
+
+.mobile_input {
+    position: relative;
+    width: 100%;
+    height: 32px;
+    padding: 4px 4px 4px 32px;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.mobile_input:focus {
+    border-color: #a8d6e9;
+    box-shadow: 0 0 10px 2px #a8c9e9;
+}
+
+.mobile_input_magnify {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+.container_desktop_input {
+    position: relative;
+    width: 100%;
+    padding: 8px;
+}
+
+.desktop_input {
+    width: 100%;
+    height: 32px;
+    padding: 4px 4px 4px 32px;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.desktop_input:focus {
+    border-color: #a8d6e9;
+    box-shadow: 0 0 10px 2px #a8c9e9;
+}
+
+.desktop_input_magnify {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
