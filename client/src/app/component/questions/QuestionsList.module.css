@@ -1,0 +1,32 @@
+.section {
+    width: 720px;
+    padding: 1.5rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 27px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ask_q {
+    font-size: 13px;
+    color: white;
+    border-radius: 6px;
+    min-width: 100px;
+    background-color: #0A95FF;
+}
+
+.inner_title_btn_wrap {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.sortHandler_container {
+    display: flex;
+    justify-content: right;
+}
