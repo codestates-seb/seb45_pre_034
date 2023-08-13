@@ -11,19 +11,22 @@
     font-size: 27px;
     font-weight: 400;
     width: 100%;
+    margin: 0 12px 12px 0;
 }
 
 .ask_q {
+    min-width: 100px;
+    height: 37px;
     font-size: 13px;
     color: white;
     border-radius: 6px;
-    min-width: 100px;
     background-color: #0A95FF;
 }
 
 .inner_title_btn_wrap {
     display: flex;
     /* justify-content: space-between; */
+    margin-bottom: 12px;
 }
 
 .sortHandler_container {

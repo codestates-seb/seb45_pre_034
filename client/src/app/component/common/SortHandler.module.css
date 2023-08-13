@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 9.6px;
+    border-right: 1px solid grey;
+}
+
+.btn:last-child{
+    border: 0;
+}
