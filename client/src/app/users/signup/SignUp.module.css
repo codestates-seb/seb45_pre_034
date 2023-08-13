@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    padding: 24px 16px;
+    background-color: #f1f2f3;
+}
+
+.main_msg_container {
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.main_msg {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.col_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* SignUp form width 반응형 */
+.sign_form_container {
+    width: 320px;
+}
+
+@media screen and (max-width: 600px) {
+    .sign_form_container {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 282px) {
+    .sign_form_container {
+        width: 100%;
+    }
+}
