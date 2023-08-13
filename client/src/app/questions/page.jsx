@@ -1,13 +1,13 @@
-import Mde from "@component/common/Mde"
+import Layout from "@component/layout/Layout";
+import QuestionsList from "@component/questions/QuestionsList";
 function Questions() {
-    
     return (
-        <div>
-            <h1>질문창</h1>
-            <Mde></Mde>
-        </div>
+        <>
+            <Layout>
+                <QuestionsList title="All Questions" />
+            </Layout>
+        </>
     );
 }
 
 export default Questions;
-
