@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    padding: 24px;
+    margin: 24px 0 36px 0;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px #dfdfdf;
+}
+
+.guide_msg {
+    margin-top: 32px;
+    color: #727177;
+    font-size: 13px;
+}
