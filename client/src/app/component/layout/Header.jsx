@@ -66,8 +66,12 @@ function Header() {
 
         return (
             <>
-                <Button label="Log in" type="Secondary" />
-                <Button label="Sign up" type="Primary" />
+                <Link href="/users/login">
+                    <Button label="Log in" type="Secondary" />
+                </Link>
+                <Link href="/users/signup">
+                    <Button label="Sign up" type="Primary" />
+                </Link>
             </>
         );
     };
