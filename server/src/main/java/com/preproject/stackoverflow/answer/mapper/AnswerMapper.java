@@ -1,5 +1,7 @@
 package com.preproject.stackoverflow.answer.mapper;
 
+import com.preproject.stackoverflow.answer.dto.AnswerPatchDto;
+import com.preproject.stackoverflow.answer.dto.AnswerPostDto;
 import com.preproject.stackoverflow.answer.dto.QuestionAnswerResponseDto;
 import com.preproject.stackoverflow.answer.dto.UserAnswerResponseDto;
 import com.preproject.stackoverflow.answer.entity.Answer;
@@ -14,4 +16,7 @@ public interface AnswerMapper {
 
     UserAnswerResponseDto userToAnswerResponseDto(Answer answer);
     List<UserAnswerResponseDto> answersToUserAnswerResponseDtos(List<Answer> answers);
+
+    Answer answerPostDtoToAnswer(AnswerPostDto answerPostDto);
+    Answer answerPatchDtoToAnswer(AnswerPatchDto answerPatchDto);
 }
