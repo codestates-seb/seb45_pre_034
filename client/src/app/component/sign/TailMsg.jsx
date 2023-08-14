@@ -21,7 +21,7 @@ function TailMsg() {
             return (
                 <div>
                     <span className={styles.tail_msg}>Don’t have an account?</span>
-                    <Link href="/users/login">
+                    <Link href="/users/signup">
                         <span className={styles.link_tag}>Sign up</span>
                     </Link>
                 </div>

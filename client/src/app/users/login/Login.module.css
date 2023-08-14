@@ -27,16 +27,12 @@
     height: calc(100vh - 100px);
 }
 
-.join_msg_container {
-    display: block;
-}
-
 /* SignUp form width 반응형 */
 .sign_form_container {
     width: 320px;
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 600px) {
     .col_center {
         height: max-content;
     }
@@ -46,10 +42,6 @@
 @media screen and (max-width: 850px) {
     .main_msg_container {
         display: block;
-    }
-    
-    .join_msg_container {
-        display: none;
     }
 }
 
