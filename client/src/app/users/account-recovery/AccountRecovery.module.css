@@ -26,7 +26,7 @@
     width: 420px;
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 400px) {
     .col_center {
         height: max-content;
     }
