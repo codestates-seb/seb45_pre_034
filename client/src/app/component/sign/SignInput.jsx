@@ -3,7 +3,15 @@
 import { useEffect, useState, useRef } from "react";
 import styles from "./SignInput.module.css";
 
-function SignInput({ label, regex, subGuideMsg }) {
+/**
+ *
+ * @param {string} label input label
+ * @param {string} subLabel input label 하단 설명
+ * @param {RegExp} regex input value 유효성 검사를 위한 정규식
+ * @param {string} subGuideMsg input value 유효성에 대해 툴팁에 작성할 내용
+ * @returns
+ */
+function SignInput({ label, subLabel, regex, subGuideMsg }) {
     const inputRef = useRef(null);
 
     const [value, setValue] = useState();
@@ -45,6 +53,7 @@ function SignInput({ label, regex, subGuideMsg }) {
     return (
         <div className={styles.container}>
             <p className={styles.label}>{label}</p>
+            {subLabel && <p className={styles.sub_label}>{subLabel}</p>}
             <input
                 onFocus={() => setShowSubGuide(true)}
                 ref={inputRef}
