@@ -2,7 +2,7 @@ import SignInput from "@component/sign/SignInput";
 import Button from "@component/sign/Button";
 import styles from "./SignForm.module.css";
 
-function SignForm() {
+function SignUpForm() {
     const nicknameSubGuide = `Display name can only
     \n- contains letters, digits, spaces, hyphens or apostrophes
     \n- start with a letter of digis
@@ -25,4 +25,4 @@ function SignForm() {
     );
 }
 
-export default SignForm;
+export default SignUpForm;
