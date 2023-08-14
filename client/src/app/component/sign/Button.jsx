@@ -1,44 +1,38 @@
+"use client";
+
 import styles from "./Button.module.css";
 
 /**
  * @param {"Primary" | "Secondary"} type
+ * @param {boolean} isFullBtn
  * @param {string} label
  * @param {Function} onClickHandler
  * @returns
  */
-function Button({ type, label, onClickHandler }) {
-    const renderBtnByType = () => {
-        if (type === "Primary") {
-            return (
-                <button
-                    onClick={() => {
-                        if (onClickHandler) {
-                            onClickHandler();
-                        }
-                    }}
-                    className={`${styles.btn_container} ${styles.btn_primary}`}
-                >
-                    {label}
-                </button>
-            );
-        }
+function Button({ type, label, isFullBtn = false, onClickHandler }) {
+    let cn = `${styles.btn_container}`;
 
-        if (type === "Secondary") {
-            return (
-                <button
-                    onClick={() => {
-                        if (onClickHandler) {
-                            onClickHandler();
-                        }
-                    }}
-                    className={`${styles.btn_container} ${styles.btn_secondary}`}
-                >
-                    {label}
-                </button>
-            );
-        }
-    };
-    return <>{renderBtnByType()}</>;
+    if (type === "Primary") {
+        cn = `${cn} ${styles.btn_primary}`;
+    }
+
+    if (type === "Secondary") {
+        cn = `${cn} ${styles.btn_secondary}`;
+    }
+
+    return (
+        <button
+            onClick={() => {
+                if (onClickHandler) {
+                    onClickHandler();
+                }
+            }}
+            className={`${cn}`}
+            style={isFullBtn ? { width: "100%", height: "38px" } : { width: "fit-content" }}
+        >
+            {label}
+        </button>
+    );
 }
 
 export default Button;

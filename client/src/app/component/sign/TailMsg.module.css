@@ -1,0 +1,10 @@
+.tail_msg {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.link_tag {
+    font-size: 12px;
+    color: #0074CC;
+    cursor: pointer;
+}
