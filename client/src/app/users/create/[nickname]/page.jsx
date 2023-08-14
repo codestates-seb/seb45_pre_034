@@ -1,13 +1,12 @@
-import Header from "@component/layout/Header";
+import Layout from "@component/layout/Layout";
 import CreateForm from "@component/sign/create/CreateForm";
 import styles from "./CreateProfile.module.css";
 
 function CreateProfile({ params }) {
     // const { nickname } = params;
     return (
-        <>
-            <Header />
-            <div style={{ marginTop: "52px" }} className={styles.container}>
+        <Layout>
+            <div className={styles.container}>
                 <div className={styles.col_center}>
                     <div className={styles.main_msg_container}>
                         <h2 className={styles.main_msg}>You're Almost done!</h2>
@@ -23,7 +22,7 @@ function CreateProfile({ params }) {
                     </div>
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }
 
