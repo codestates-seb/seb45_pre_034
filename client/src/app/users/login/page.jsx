@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Header from "@component/layout/Header";
 import SignOauth from "@component/sign/SignOauth";
-import SignInForm from "@component/sign/SignInForm";
+import SignInForm from "@component/sign/login/SignInForm";
 import TailMsg from "@component/sign/TailMsg";
 
 import styles from "./Login.module.css";

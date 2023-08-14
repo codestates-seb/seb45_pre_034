@@ -1,7 +1,7 @@
 import Header from "@component/layout/Header";
-import JoinGuideMsg from "@component/sign/JoinGuideMsg";
+import JoinGuideMsg from "@component/sign/signup/JoinGuideMsg";
 import SignOauth from "@component/sign/SignOauth";
-import SignUpForm from "@component/sign/SignUpForm";
+import SignUpForm from "@component/sign/signup/SignUpForm";
 import TailMsg from "@component/sign/TailMsg";
 
 import styles from "./SignUp.module.css";

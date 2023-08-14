@@ -1,6 +1,6 @@
 import SignInput from "@component/sign/SignInput";
 import Button from "@component/sign/Button";
-import styles from "./SignForm.module.css";
+import styles from "../SignForm.module.css";
 
 function SignUpForm() {
     const nicknameSubGuide = `Display name can only
