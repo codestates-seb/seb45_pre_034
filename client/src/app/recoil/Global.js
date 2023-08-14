@@ -8,3 +8,8 @@ export const userinfo = atom({
         profile: "",
     },
 });
+
+export const navShow = atom({
+    key: "navShow",
+    default: false,
+});
