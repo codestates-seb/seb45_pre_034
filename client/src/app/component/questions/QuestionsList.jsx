@@ -1,3 +1,4 @@
+
 "use client";
 import { usePathname } from "next/navigation";
 import SortHandler from "@component/common/SortHandler";
@@ -23,7 +24,6 @@ function QuestionsList({ title }) {
                         <h1 className={styles.title}>{title ? title : "Questions"}</h1>
                         <button className={styles.ask_q}>Ask Question</button>
                     </div>
-
                     <div className={styles.sortHandler_container}>{renderSortHandler()}</div>
                 </header>
                 <ul>
