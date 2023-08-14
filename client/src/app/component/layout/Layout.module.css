@@ -2,3 +2,13 @@
     display: flex;
     margin-top: 52px;
 }
+
+.with_navigation {
+    margin-left: 164px;
+}
+
+@media screen and (max-width: 600px) {
+    .with_navigation {
+        margin-left: 0;
+    }
+}
