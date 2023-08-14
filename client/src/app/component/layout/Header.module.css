@@ -17,6 +17,12 @@
     align-items: center;
     height: 100%;
     padding: 0 12px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.btn_menu:hover {
+    background-color: #E2E2E2;
 }
 
 .logo {
