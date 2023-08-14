@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.constraints.Positive;
 import java.util.List;
 
 @RestController
@@ -30,16 +31,26 @@ public class AnswerController {
      * @param questionId 질문 id
      * @author wongwan choi
      */
-    @GetMapping
-    public ResponseEntity getQuestionAnswer(@RequestParam("questionId") int questionId){
+    @GetMapping("/{questionId}")
+    public ResponseEntity getQuestionAnswer(@PathVariable("questionId") @Positive int questionId){
         List<Answer> answers = answerService.findQuestionAnswer(questionId);
-        return new ResponseEntity<>(answerMapper.answersToAnswerResponseDtos(answers),HttpStatus.OK);
+        return new ResponseEntity<>(
+                answerMapper.answersToQuestionAnswerResponseDtos(answers),
+                HttpStatus.OK);
     }
-
-//    @GetMapping
-//    public ResponseEntity getUserAnswer(@RequestParam("userId") int userId){
-//
-//    }
+    /**
+     * 특정 유저에 대한 전체 답변 출력 메서드
+     * @param userId
+     * @author wongwan choi
+     * */
+    @GetMapping("/{userId}")
+    public ResponseEntity getUserAnswer(@PathVariable("userId") @Positive int userId){
+        List<Answer> answers = answerService.findUserAnswer(userId);
+        return new ResponseEntity<>(
+                answerMapper.answersToUserAnswerResponseDtos(answers),
+                HttpStatus.OK
+        );
+    }
 
 
 
