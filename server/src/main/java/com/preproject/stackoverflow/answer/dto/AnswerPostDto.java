@@ -1,10 +1,12 @@
 package com.preproject.stackoverflow.answer.dto;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
 
 @Getter
+@Setter
 public class AnswerPostDto {
     private Integer questionId;
     private Integer userId;
