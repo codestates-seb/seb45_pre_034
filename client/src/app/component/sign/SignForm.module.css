@@ -18,3 +18,18 @@
     width: 40px;
     height: 40px;
 }
+
+.pw_guide_container {
+    position: relative;
+}
+
+.link_tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #0074CC;
+    cursor: pointer;
+    /* position: absolute 설정으로 클릭이 불가한 부분을 해결하기 위한 z-index */
+    z-index: 1;
+}
