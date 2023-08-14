@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Header from "@component/layout/Header";
+import Layout from "@component/layout/Layout";
 import SignOauth from "@component/sign/SignOauth";
 import SignInForm from "@component/sign/login/SignInForm";
 import TailMsg from "@component/sign/TailMsg";
@@ -11,9 +11,8 @@ import IconStackOverflowMini from "/public/icon_stackoverflow_mini.png";
 
 function Login() {
     return (
-        <>
-            <Header />
-            <div style={{ marginTop: "52px" }} className={styles.container}>
+        <Layout>
+            <div className={styles.container}>
                 <div className={styles.col_center}>
                     <Link href="/">
                         <div className={styles.mini_logo}>
@@ -27,7 +26,7 @@ function Login() {
                     <TailMsg />
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }
 

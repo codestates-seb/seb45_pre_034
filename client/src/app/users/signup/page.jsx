@@ -1,4 +1,4 @@
-import Header from "@component/layout/Header";
+import Layout from "@component/layout/Layout";
 import JoinGuideMsg from "@component/sign/signup/JoinGuideMsg";
 import SignOauth from "@component/sign/SignOauth";
 import SignUpForm from "@component/sign/signup/SignUpForm";
@@ -8,9 +8,8 @@ import styles from "./SignUp.module.css";
 
 function SignUp() {
     return (
-        <>
-            <Header />
-            <div style={{ marginTop: "52px" }} className={styles.container}>
+        <Layout>
+            <div className={styles.container}>
                 <div className={`${styles.col_center} ${styles.join_msg_container}`}>
                     <JoinGuideMsg />
                 </div>
@@ -26,7 +25,7 @@ function SignUp() {
                     <TailMsg />
                 </div>
             </div>
-        </>
+        </Layout>
     );
 }
 
