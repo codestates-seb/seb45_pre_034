@@ -77,7 +77,7 @@ function Header() {
     };
 
     const renderMenuBtnByAuthAndWidth = () => {
-        if (!defaultUserInfo.nickname || width < 600) {
+        if (!defaultUserInfo.email) {
             return (
                 <button className={styles.btn_menu}>
                     <FiMenu size={"1.2rem"} />
