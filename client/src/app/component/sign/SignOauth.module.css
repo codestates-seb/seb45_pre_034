@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 38px;
+    margin: 4px 0;
+    padding: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.google {
+    color: #3B4045;
+    background-color: #ffffff;
+}
+
+.github {
+    color: #ffffff;
+    background-color: #1e1f20;
+}
+
+.facebook {
+    color: #ffffff;
+    background-color: #385499;
+}
+
+.icon_container {
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+
+.icon_facebook_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
