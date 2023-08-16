@@ -1,0 +1,41 @@
+.article {
+    padding: 2rem;
+    
+}
+
+.header {
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #F8F8F9;
+}
+
+.header h1 {
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 0.5rem;
+}
+
+.meta {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+.meta > div{
+    margin: 0 1rem 0.5rem 0;
+}
+.meta > div span:first-child{
+    margin: 2px;
+}
+
+.post_grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.post_cell ul {
+    display: flex;
+    list-style: none;
+}
+
+.post_cell_bottom {
+    display: flex;
+}
