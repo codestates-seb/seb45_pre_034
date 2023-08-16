@@ -1,6 +1,7 @@
 package com.preproject.stackoverflow.answer.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
@@ -10,10 +11,15 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 public class Answer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer answerId;
+
+    private Integer questionId;
+
+    private Integer userId;
 
     @Column(name="body", nullable = false)
     private String body;
