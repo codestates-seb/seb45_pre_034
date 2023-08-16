@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "@component/questions/QuestionSummary.module.css";
 
 function QuestionSummary() {
@@ -19,12 +20,12 @@ function QuestionSummary() {
                     </div>
                 </div>
                 <div>
-                    <h3 className={styles.h3}>
-                        <a href="#">
+                    <Link href="/questions/post">
+                        <h3 className={styles.h3}>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, magni. Autem tempora magnam
                             dicta! Ipsa dolores et architecto voluptas
-                        </a>
-                    </h3>
+                        </h3>
+                    </Link>
 
                     <div className={styles.meta}>
                         <ul className={styles.ul_tag}>
