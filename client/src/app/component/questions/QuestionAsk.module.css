@@ -1,0 +1,90 @@
+.flex{ 
+    display: flex;
+}
+
+.bg{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F9F9;
+}
+
+.section {
+    width: 59vw;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.section > div:first-child {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+.section > div h1 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.notice {
+    width: 70%;
+    background-color: #EBF4FB;
+    padding: 1.5rem;
+    border: 1px solid #CFE5F5;
+    border-radius: 6px;
+}
+
+.notice h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.notice p {
+    font-size: 15px;
+}
+.notice p:nth-child(3){
+    margin-bottom: 15px;
+}
+
+.notice h5 {
+    font-weight: 500;
+}
+
+.notice h5, .notice ul{
+    font-size: 13px;
+}
+
+
+.advice div:first-child{
+    font-size: 15px;
+    padding: 12px;
+    background-color: #F8F9F9;
+}
+
+
+
+.problem_container {
+    width: 70%;
+    padding: 1.5rem;
+    border: 1px solid #d6d9dc;
+    box-shadow: 0 1px 2px hsla(0,0%,0%,0.05), 0 1px 4px hsla(0, 0%, 0%, 0.05), 0 2px 8px hsla(0, 0%, 0%, 0.05);
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+
+.problem_container label {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 2px;
+}
+.problem_container label p{
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.problem_container input {
+    padding: 7.8px 9.1px;
+    width: 100%;
+    border: 1px solid hsl(210,8%,75%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    
+}
