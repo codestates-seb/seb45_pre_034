@@ -7,6 +7,7 @@ import com.preproject.stackoverflow.question.repository.QuestionRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -29,7 +30,34 @@ public class QuestionService {
         Optional.ofNullable(question.getBody()).ifPresent(body -> findQuestion.setBody(body));
         findQuestion.setModifiedAt(LocalDateTime.now());
 
-        return findQuestion;
+        return questionRepository.save(findQuestion);
+    }
+
+    /**
+     * ----- 설명 -----
+     * @param 매개변수
+     * @return 리턴 값
+     */
+
+    public Question findQeustionUser(Integer questionId, Integer userId) {
+        return findVerifiedQuestion(questionId, userId);
+    }
+
+    public List<Question> findQuestionsUser(Integer userId) {
+        return questionRepository.findByUserId(userId);
+    }
+
+    public List<Question> findQuestions() {
+        return questionRepository.findAll();
+    }
+
+    public void deleteQuestion(Integer questionId, Integer userId) {
+        Question findQuestion = findVerifiedQuestion(questionId, userId);
+        questionRepository.delete(findQuestion);
+    }
+
+    public void deleteQuestions(Integer userId) {
+        questionRepository.deleteAllByUserId(userId);
     }
 
     private Question findVerifiedQuestion(Integer questionId, Integer userId) {
@@ -38,6 +66,7 @@ public class QuestionService {
         Question findQuestion = optionalQuestion.orElseThrow(() -> new BusinessLogicException(ExceptionCode.QUESTION_NOT_FOUND));
         return findQuestion;
     }
+
     private void verifyExistQuestion(Integer questionId) {
         Optional<Question> question = questionRepository.findById(questionId);
         if(question.isPresent()){

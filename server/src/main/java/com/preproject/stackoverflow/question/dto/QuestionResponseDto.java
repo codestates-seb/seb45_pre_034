@@ -3,7 +3,6 @@ package com.preproject.stackoverflow.question.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import javax.persistence.Column;
 import java.time.LocalDateTime;
 
 @AllArgsConstructor
