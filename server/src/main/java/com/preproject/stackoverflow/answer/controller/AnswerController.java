@@ -5,6 +5,8 @@ import com.preproject.stackoverflow.answer.dto.AnswerPostDto;
 import com.preproject.stackoverflow.answer.entity.Answer;
 import com.preproject.stackoverflow.answer.mapper.AnswerMapper;
 import com.preproject.stackoverflow.answer.service.AnswerService;
+import com.preproject.stackoverflow.dto.MultiResponseDto;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -76,6 +78,23 @@ public class AnswerController {
                 answerMapper.answersToUserAnswerResponseDtos(answers),
                 HttpStatus.OK
         );
+    }
+
+    /**
+     *
+     * @param page
+     * @param size
+     * @return 200_OK, 페이지네이션 적용된 유저에 대한 답변
+     */
+    @GetMapping
+    public ResponseEntity getUserAnswers(@Positive @RequestParam int page,
+                                         @Positive @RequestParam int size){
+        Page<Answer> pageAnswers = answerService.findUserAnswers(page - 1, size);
+        List<Answer> answers = pageAnswers.getContent();
+        return new ResponseEntity<>(
+                new MultiResponseDto<>(answerMapper.answersToUserAnswerResponseDtos(answers),
+                        pageAnswers),
+                HttpStatus.OK);
     }
 
     /**
