@@ -1,19 +1,32 @@
 "use client";
 
+// import dynamic from "next/dynamic";
+import MDEditor from "@uiw/react-md-editor";
 import "@uiw/react-md-editor/markdown-editor.css";
 import "@uiw/react-markdown-preview/markdown.css";
-import dynamic from "next/dynamic";
 import { useState } from "react";
 import styles from "@component/common/Mde.module.css";
 
-const MDEditor = dynamic(() => import("@uiw/react-md-editor"), { ssr: false });
+
+/**
+ * MDEditor - 사용자가 마크다운 문법을 입력하는 웹 에디터
+ *
+ * MDEditor.Markdown - 마크다운 문법을 HTML로 변환합니다.
+ * @prop {string} source: 마크다운 문자열
+ *
+ */
+// const MDEditor = dynamic(() => import("@uiw/react-md-editor"), { ssr: false });
 
 function Mde() {
     const [value, setValue] = useState("");
-
     return (
         <>
-            <MDEditor className={styles.mde} value={value} onChange={setValue} />
+            <MDEditor
+                className={styles.mde}
+                value={value}
+                onChange={setValue}
+                // previewOptions={}
+            />
         </>
     );
 }
