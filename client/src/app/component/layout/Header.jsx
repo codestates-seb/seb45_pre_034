@@ -66,14 +66,18 @@ function Header() {
 
         return (
             <>
-                <Button label="Log in" type="Secondary" />
-                <Button label="Sign up" type="Primary" />
+                <Link href="/users/login">
+                    <Button label="Log in" type="Secondary" />
+                </Link>
+                <Link href="/users/signup">
+                    <Button label="Sign up" type="Primary" />
+                </Link>
             </>
         );
     };
 
     const renderMenuBtnByAuthAndWidth = () => {
-        if (!defaultUserInfo.nickname || width < 600) {
+        if (!defaultUserInfo.email) {
             return (
                 <button className={styles.btn_menu}>
                     <FiMenu size={"1.2rem"} />

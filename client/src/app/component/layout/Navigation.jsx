@@ -80,7 +80,7 @@ function Navigation() {
 
     return (
         <aside className={styles.container}>
-            <ul>
+            <ul className={styles.ul_container}>
                 {renderHomeItem()}
                 <li className={styles.li_sub_item}>
                     <p>PUBLIC</p>
