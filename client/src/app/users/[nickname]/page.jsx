@@ -1,6 +1,7 @@
 import Layout from "@component/layout/Layout";
 import UserCard from "@component/user/UserCard";
 import IconDefaultUser from "/public/icon_default_user.png";
+import ToggleView from "@component/user/ToggleView";
 
 import styles from "./UserDetail.module.css";
 
@@ -16,6 +17,7 @@ function UserDetail({ params }) {
                 <div className={styles.user_card_container}>
                     <UserCard user={user} />
                 </div>
+                <ToggleView nickname={nickname} />
                 <div>
                     <h2 className={styles.sub_title}>Questions</h2>
                     <div className={styles.sub_list}>

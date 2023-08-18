@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    margin: 20px 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: 30px;
+    padding: 6px;
+    border-radius: 16px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #F48225;
+    color: #ffffff;
+}
