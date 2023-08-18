@@ -17,3 +17,9 @@
     color: #39739D;
     background-color: #E1ECF4;
 }
+
+.btn_tirtiary {
+    color: #FF2222;
+    background-color: #ffffff;
+    border: 1px solid #FF2222;
+}

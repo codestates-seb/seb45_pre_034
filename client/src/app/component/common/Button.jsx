@@ -3,7 +3,7 @@
 import styles from "./Button.module.css";
 
 /**
- * @param {"Primary" | "Secondary"} type
+ * @param {"Primary" | "Secondary" | "Tertiary"} type
  * @param {boolean} isFullBtn
  * @param {string} label
  * @param {Function} onClickHandler
@@ -18,6 +18,10 @@ function Button({ type, label, isFullBtn = false, onClickHandler }) {
 
     if (type === "Secondary") {
         cn = `${cn} ${styles.btn_secondary}`;
+    }
+
+    if (type === "Tertiary") {
+        cn = `${cn} ${styles.btn_tirtiary}`;
     }
 
     return (
