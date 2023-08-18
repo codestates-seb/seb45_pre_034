@@ -1,0 +1,51 @@
+.container{
+    border-top: 1px solid #D6D9DC;
+}
+.summary{
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #D6D9DC;
+}
+
+.summary_stat{
+    font-size: 13px;
+    margin-right: 1rem;
+    text-align: right;
+}
+.summary_stat span{
+    margin-right: 0.5rem;
+}
+
+.h3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #739FDF;
+    margin-bottom: 0.5rem;
+}
+
+.meta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap:6px;
+    font-size: 12px;
+}
+.ul_tag{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+.ul_tag li {
+    margin-right: 6px;
+    padding: 4.8px 6px;
+    background-color: #E1ECF4;
+}
+
+.user_card{
+    width: 100%;
+  display: flex;
+  justify-content: right;
+}
+

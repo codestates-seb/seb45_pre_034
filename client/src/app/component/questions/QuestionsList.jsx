@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import SortHandler from "@component/common/SortHandler";
+import QuestionSummary from "./QuestionSummary";
 import styles from "@component/questions/QuestionsList.module.css";
 function QuestionsList({ title }) {
     const pathname = usePathname();
@@ -27,9 +28,7 @@ function QuestionsList({ title }) {
                     <div className={styles.sortHandler_container}>{renderSortHandler()}</div>
                 </header>
                 <ul>
-                    <li>QuestionSummary.jsx</li>
-                    <li>QuestionSummary.jsx</li>
-                    <li>QuestionSummary.jsx</li>
+                    <QuestionSummary/>
                 </ul>
             </section>
         </>
