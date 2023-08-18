@@ -5,6 +5,9 @@ import com.preproject.stackoverflow.answer.repository.AnswerRepository;
 import com.preproject.stackoverflow.exception.BusinessLogicException;
 import com.preproject.stackoverflow.exception.ExceptionCode;
 import com.preproject.stackoverflow.question.entity.Question;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -71,6 +74,10 @@ public class AnswerService {
     public List<Answer> findUserAnswer(int userId){
         List<Answer> answerList = answerRepository.findAllByUserId(userId);
         return answerList;
+    }
+
+    public Page<Answer> findUserAnswers(int page, int size){
+        return answerRepository.findAll(PageRequest.of(page, size, Sort.by("userId").descending()));
     }
 
     /**
