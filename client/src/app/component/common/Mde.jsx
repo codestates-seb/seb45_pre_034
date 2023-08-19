@@ -10,10 +10,7 @@ import styles from "@component/common/Mde.module.css";
 
 /**
  * MDEditor - 사용자가 마크다운 문법을 입력하는 웹 에디터
- *
- * MDEditor.Markdown - 마크다운 문법을 HTML로 변환합니다.
- * @prop {string} source: 마크다운 문자열
- *
+ * @prop: previewOption - 
  */
 // const MDEditor = dynamic(() => import("@uiw/react-md-editor"), { ssr: false });
 
