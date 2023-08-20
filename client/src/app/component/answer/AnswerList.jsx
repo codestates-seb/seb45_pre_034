@@ -1,6 +1,8 @@
 "use client";
 import Mde from '@component/common/Mde';
 import styles from '@component/answer/AnswerList.module.css'
+import { useRecoilState } from 'recoil';
+import { followingState } from '@recoil/Global';
 
 function AnswerList() {
     
@@ -26,6 +28,12 @@ function AnswerList() {
     }
 
     const Answer = () => {
+        const [isFollowing, setIsFollowing] = useRecoilState(followingState);
+
+        const handleFollowToggle = () => {
+            setIsFollowing(!isFollowing);
+        }
+
         return (
             <>
                 <div className="vote-container"></div>
@@ -35,7 +43,7 @@ function AnswerList() {
                         <div className="buttons">
                             <a>share</a>
                             <a>edit</a>
-                            <button>follow</button>
+                            <button onClick={handleFollowToggle}>{isFollowing ? 'Following' : 'Follow'}</button>
                         </div>
                         <div className="user-info"></div>
                     </div>
