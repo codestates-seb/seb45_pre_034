@@ -1,5 +1,5 @@
 "use client";
-import Button from "@component/sign/Button";
+import Button from "@component/common/Button";
 import { useEffect, useRef, useState } from "react";
 import styles from "@component/comment/Comment.module.css";
 const MIN_LENGTH = 15;
