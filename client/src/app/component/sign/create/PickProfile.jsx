@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRecoilValue } from "recoil";
 import { userinfo } from "@recoil/Global";
 
-import Button from "@component/sign/Button";
+import Button from "@component/common/Button";
 
 import IconDefaultUser from "/public/icon_default_user.png";
 import styles from "./PickProfile.module.css";
