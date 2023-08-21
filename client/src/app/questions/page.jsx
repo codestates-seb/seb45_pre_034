@@ -1,3 +1,4 @@
+"use client";
 import Layout from "@component/layout/Layout";
 import QuestionsList from "@component/questions/QuestionsList";
 function Questions() {

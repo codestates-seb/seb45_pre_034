@@ -1,6 +1,6 @@
 "use client";
 
-import Mde from "@component/common/Mde";
+import MdViewer from "@component/common/MdViewer";
 import styles from "@component/questions/QuestionPost.module.css";
 function QuestionPost() {
     return (
@@ -29,14 +29,30 @@ function QuestionPost() {
                 <div className={styles.post_grid}>
                     <div className={styles.vote_cell}>voiting container</div>
                     <div className={styles.post_cell}>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia voluptates eos
-                            unde exercitationem obcaecati, quasi tenetur magni veniam. Qui assumenda, facere quis
-                            veritatis omnis hic similique aliquam rerum laudantium? Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Non voluptatibus sint doloribus. Commodi corporis odit quasi
-                            officia quos dolorem expedita soluta necessitatibus, atque, culpa placeat, perspiciatis
-                            minus suscipit fuga! Nisi.
-                        </div>
+                        <MdViewer
+                            source={`
+### Preview Markdown
+
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?logo=codesandbox)](https://codesandbox.io/embed/react-md-editor-preview-markdown-vrucl?fontsize=14&hidenavigation=1&theme=dark)
+
+\`\`\`jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import MDEditor from '@uiw/react-md-editor';
+
+export default function App() {
+  return (
+    <div className="container">
+      <MDEditor.Markdown source="Hello Markdown!" />
+    </div>
+  );
+}
+\`\`\`
+> 코드 설명......
+<br/>
+위의 코드와 같이 작성한 부분에서 알수 없는 오류가 발생....
+`}
+                        />
                         <div className={styles.post_cell_bottom}>
                             <div>
                                 <div>
