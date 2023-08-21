@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./FindPwForm.module.css";
 import SignInput from "@component/sign/SignInput";
-import Button from "@component/sign/Button";
+import Button from "@component/common/Button";
 
 function FindPwForm() {
     const [email, setEmail] = useState("");
