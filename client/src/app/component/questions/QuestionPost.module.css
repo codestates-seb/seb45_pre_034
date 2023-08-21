@@ -1,6 +1,6 @@
 .article {
     padding: 2rem;
-    max-width: 1100px
+    /* max-width: 1100px */
 }
 
 .header {
@@ -27,29 +27,16 @@
 }
 
 .section {
-    max-width: 660px;
+    /* max-width: 660px; */
 }
 
 .post_grid {
+    width: 100%;
     display: grid;
     grid-template-columns: max-content 1fr;
+
 }
 
 .vote_cell {
     padding-right: 1rem;
-}
-
-.post_cell ul {
-    display: flex;
-    list-style: none;
-}
-
-.post_cell_bottom {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-    height: 70px;
-}
-.post_cell_bottom div:first-child span{
-    margin: 0.25rem;
 }

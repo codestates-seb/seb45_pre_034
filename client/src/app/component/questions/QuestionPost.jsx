@@ -1,5 +1,6 @@
 "use client";
 
+import ContributorInfo from "@component/common/ContributorInfo";
 import MdViewer from "@component/common/MdViewer";
 import Comment from "@component/comment/Comment";
 import styles from "@component/questions/QuestionPost.module.css";
@@ -54,17 +55,7 @@ export default function App() {
 위의 코드와 같이 작성한 부분에서 알수 없는 오류가 발생....
 `}
                         />
-                        <div className={styles.post_cell_bottom}>
-                            <div>
-                                <div>
-                                    <span>share</span>
-                                    <span>edit</span>
-                                    <span>follow</span>
-                                </div>
-                            </div>
-                            <div>signiture</div>
-                            <div>signiture owner</div>
-                        </div>
+                        <ContributorInfo/>
                     </div>
                     <div>{/* grid의 cell을 채우는 용도의 요소 */}</div>
                     <div><Comment/></div>
