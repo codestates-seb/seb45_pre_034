@@ -1,5 +1,6 @@
 package com.preproject.stackoverflow.answer.entity;
 
+import com.preproject.stackoverflow.question.entity.Question;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -17,9 +18,14 @@ public class Answer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer answerId;
 
-    private Integer questionId;
+    @ManyToOne
+    @JoinColumn(name = "questionId")
+    private Question question;
 
-    private Integer userId;
+//    유저 엔티티 추가후 수정
+//    @ManyToOne
+//    @JoinColumn(name = "userId")
+//    private User user;
 
     @Column(name="body", nullable = false)
     private String body;
@@ -35,7 +41,5 @@ public class Answer {
 
     @Column(name = "modifiedAt")
     private LocalDateTime modifiedAt = LocalDateTime.now();
-
-
 
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import styles from "@component/questions/QuestionSummary.module.css";
 
