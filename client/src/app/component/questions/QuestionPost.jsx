@@ -1,6 +1,7 @@
 "use client";
 
 import MdViewer from "@component/common/MdViewer";
+import Comment from "@component/comment/Comment";
 import styles from "@component/questions/QuestionPost.module.css";
 function QuestionPost() {
     return (
@@ -66,7 +67,7 @@ export default function App() {
                         </div>
                     </div>
                     <div>{/* grid의 cell을 채우는 용도의 요소 */}</div>
-                    <div>{/* Comment.jsx  */}add comment</div>
+                    <div><Comment/></div>
                 </div>
             </section>
         </article>
