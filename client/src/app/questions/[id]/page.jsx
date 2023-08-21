@@ -1,16 +1,14 @@
 "use client";
-
+import AnswerList from "@component/answer/AnswerList";
 import Layout from "@component/layout/Layout";
-import Mde from "@component/common/Mde";
-import MdViewer from "@component/common/MdViewer";
 import QuestionPost from "@component/questions/QuestionPost";
 function Questions() {
  
     return (
         <>
             <Layout>
-                <QuestionPost />
-                <Mde />
+                <QuestionPost/>
+                <AnswerList/>
             </Layout>
         </>
     );
