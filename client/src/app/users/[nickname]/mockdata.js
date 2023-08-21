@@ -21,7 +21,7 @@ export const otherUser = {
 export const questions = [
     {
         id: 0,
-        user: user,
+        userId: 0,
         title: "test1",
         body: "test1",
         recomended: 20,
@@ -30,7 +30,7 @@ export const questions = [
     },
     {
         id: 1,
-        user: user,
+        userId: 0,
         title: "test2",
         body: "test2",
         recomended: 30,
@@ -39,7 +39,7 @@ export const questions = [
     },
     {
         id: 2,
-        user: user,
+        userId: 0,
         title: "test3",
         body: "test3",
         recomended: 40,
@@ -51,7 +51,7 @@ export const questions = [
 export const questionsByOtherUser = [
     {
         id: 3,
-        user: otherUser,
+        userId: 1,
         title: "test4",
         body: "test4",
         recomended: 10,
@@ -60,7 +60,7 @@ export const questionsByOtherUser = [
     },
     {
         id: 4,
-        user: otherUser,
+        userId: 1,
         title: "test5",
         body: "test5",
         recomended: 200,
@@ -69,7 +69,7 @@ export const questionsByOtherUser = [
     },
     {
         id: 5,
-        user: otherUser,
+        userId: 1,
         title: "test6",
         body: "test6",
         recomended: 400,
@@ -81,8 +81,8 @@ export const questionsByOtherUser = [
 export const answers = [
     {
         id: 0,
-        user: user,
-        question: questionsByOtherUser[0],
+        userId: 0,
+        questionId: 3,
         title: "answer4",
         body: "answer4",
         recomended: 100,
@@ -92,8 +92,8 @@ export const answers = [
     },
     {
         id: 1,
-        user: user,
-        question: questionsByOtherUser[1],
+        userId: 0,
+        questionId: 4,
         title: "answer5",
         body: "answer5",
         recomended: 40,
@@ -103,8 +103,8 @@ export const answers = [
     },
     {
         id: 2,
-        user: user,
-        question: questionsByOtherUser[2],
+        userId: 0,
+        questionId: 5,
         title: "answer6",
         body: "answer6",
         recomended: 20,
@@ -117,11 +117,33 @@ export const answers = [
 export const comments = [
     {
         id: 0,
-        user: user,
-        answer: answers[0],
+        userId: 0,
+        answerId: 0,
         question: null,
         body: "comment1",
         createdAt: "2023-08-16 17:00:00",
         updatedAt: "2023-08-16 17:00:00",
     },
 ];
+
+const result = {
+    data: null,
+};
+
+const resultWithPagination = {
+    page: 2,
+    size: 10,
+    // 마지막 페이지
+    totalItems: 139,
+    data: [
+        {
+            id: 0,
+            userId: 0,
+            title: "test1",
+            body: "test1",
+            recomended: 20,
+            createdAt: "2023-08-16 13:00:00",
+            updatedAt: "2023-08-16 13:00:00",
+        },
+    ],
+};

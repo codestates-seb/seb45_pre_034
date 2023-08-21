@@ -1,4 +1,27 @@
-.container {
+.sub_title {
+    font-weight: 400;
+}
+
+.sub_title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub_list {
+    margin-top: 12px;
+    margin-bottom: 40px;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px #dfdfdf;
+}
+
+.see_all_msg {
+    font-size: 13px;
+    color: #3B4045;
+}
+
+.item_container {
     display: flex;
     padding: 6px;
     border-bottom: 1px solid #E2E2E2;

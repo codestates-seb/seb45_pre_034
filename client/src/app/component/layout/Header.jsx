@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { useRecoilState } from "recoil";
 import { userinfo, navShow } from "@recoil/Global";
 
 import { useSceenWidthAndHeight } from "@hook/useScreenWidthAndHeight";
 
-import Button from "@component/sign/Button";
+import Button from "@component/common/Button";
 import SearchInput from "@component/common/SearchInput";
 
 import IconStackOverflow from "/public/icon_stackoverflow.png";
@@ -20,6 +20,8 @@ import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
 
 function Header() {
+    const router = useRouter();
+
     const [isNavShow, setIsNavShow] = useRecoilState(navShow);
     const [defaultUserInfo, setDefaultUserInfo] = useRecoilState(userinfo);
 
@@ -68,12 +70,9 @@ function Header() {
 
         return (
             <>
-                <Link href="/users/login">
-                    <Button label="Log in" type="Secondary" />
-                </Link>
-                <Link href="/users/signup">
-                    <Button label="Sign up" type="Primary" />
-                </Link>
+                <Button label="Log in" type="Secondary" onClickHandler={() => router.push("/users/login")} />
+
+                <Button label="Sign up" type="Primary" onClickHandler={() => router.push("/users/signup")} />
             </>
         );
     };
@@ -91,7 +90,7 @@ function Header() {
     return (
         <header className={styles.container}>
             {renderMenuBtnByAuthAndWidth()}
-            <Link href="/">{renderIconByWidth()}</Link>
+            <button onClick={() => router.push("/")}>{renderIconByWidth()}</button>
 
             <SearchInput />
 

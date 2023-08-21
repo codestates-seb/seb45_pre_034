@@ -29,6 +29,7 @@
     width: 150px;
     height: 30px;
     margin: 0 8px;
+    cursor: pointer;
 }
 
 .logo > img {
@@ -40,6 +41,7 @@
     width: 30px;
     height: 30px;
     margin: 0 8px;
+    cursor: pointer;
 }
 
 .mini_logo > img {

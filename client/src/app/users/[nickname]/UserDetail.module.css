@@ -9,14 +9,3 @@
     width: 100%;
     margin-bottom: 32px;
 }
-
-.sub_title {
-    font-weight: 400;
-}
-
-.sub_list {
-    margin: 12px 0;
-    border: 1px solid #E2E2E2;
-    border-radius: 4px;
-    box-shadow: 0 0 10px 2px #dfdfdf;
-}
