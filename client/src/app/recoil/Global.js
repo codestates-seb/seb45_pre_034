@@ -13,3 +13,8 @@ export const followingState = atom({
     key: 'followingState',
     default: false,
 });
+
+export const sortState = atom({
+    key: 'sortState',
+    default: '',
+})
