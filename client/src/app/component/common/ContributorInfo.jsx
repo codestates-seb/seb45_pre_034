@@ -1,6 +1,4 @@
-"use client";
-
-import styles from "@component/common/Contributor.module.css";
+import styles from "@component/common/ContributorInfo.module.css";
 function ContributorInfo() {
     const UserInfo = () => {
         return (
@@ -25,8 +23,8 @@ function ContributorInfo() {
                         <a href="#">follow</a>
                     </div>
                 </div>
-                <div className={styles.signature}>{UserInfo()}</div>
-                <div className={styles.signature_owner}>{UserInfo()}</div>
+                <div className={styles.signature}><UserInfo/></div>
+                <div className={styles.signature_owner}><UserInfo/></div>
             </div>
         </>
     );
