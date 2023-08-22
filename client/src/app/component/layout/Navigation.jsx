@@ -15,66 +15,41 @@ function Navigation() {
     };
 
     const renderHomeItem = () => {
-        if (selectedItem === "Home") {
-            return (
-                <li className={`${styles.li_item} ${styles.selected}`} onClick={() => onClickHandler("Home")}>
-                    <Link href="/">Home</Link>
-                </li>
-            );
-        }
-
+        const cn = selectedItem === "Home" ? `${styles.li_item} ${styles.selected}` : `${styles.li_item}`;
         return (
-            <li className={styles.li_item} onClick={() => onClickHandler("Home")}>
-                <Link href="/">Home</Link>
-            </li>
+            <Link href="/">
+                <li className={`${cn}`} onClick={() => onClickHandler("Home")}>
+                    Home
+                </li>
+            </Link>
         );
     };
 
     const renderQuestionsItem = () => {
-        if (selectedItem === "Questions") {
-            return (
-                <li className={`${styles.li_item} ${styles.selected}`} onClick={() => onClickHandler("Questions")}>
-                    <Link href="/questions">
-                        <div className={styles.items_center}>
-                            <BsGlobeAmericas size={"1rem"} />
-                            <span style={{ marginLeft: "4px" }}>Questions</span>
-                        </div>
-                    </Link>
-                </li>
-            );
-        }
+        const cn = selectedItem === "Questions" ? `${styles.li_item} ${styles.selected}` : `${styles.li_item}`;
 
         return (
-            <li className={styles.li_item} onClick={() => onClickHandler("Questions")}>
-                <Link href="/questions">
+            <Link href="/questions">
+                <li className={`${cn}`} onClick={() => onClickHandler("Questions")}>
                     <div className={styles.items_center}>
                         <BsGlobeAmericas size={"1rem"} />
                         <span style={{ marginLeft: "4px" }}>Questions</span>
                     </div>
-                </Link>
-            </li>
+                </li>
+            </Link>
         );
     };
 
     const renderUsersItem = () => {
-        if (selectedItem === "Users") {
-            return (
-                <li className={`${styles.li_item} ${styles.selected}`} onClick={() => onClickHandler("Users")}>
-                    <Link href="/users">
-                        <BiUser />
-                        <span style={{ marginLeft: "4px" }}>Users</span>
-                    </Link>
-                </li>
-            );
-        }
+        const cn = selectedItem === "Users" ? `${styles.li_item} ${styles.selected}` : `${styles.li_item}`;
 
         return (
-            <li className={styles.li_item} onClick={() => onClickHandler("Users")}>
-                <Link href="/users">
+            <Link href="/users">
+                <li className={`${cn}`} onClick={() => onClickHandler("Users")}>
                     <BiUser />
                     <span style={{ marginLeft: "4px" }}>Users</span>
-                </Link>
-            </li>
+                </li>
+            </Link>
         );
     };
 

@@ -42,7 +42,7 @@ function SearchInput() {
             <div className={styles.container_desktop_input}>
                 <input className={styles.desktop_input} placeholder="Search..." />
                 <div className={styles.desktop_input_magnify}>
-                    <FaMagnifyingGlass size={"1.3rem"} color="#a2a2a2" />
+                    <FaMagnifyingGlass size={"1.1rem"} color="#a2a2a2" />
                 </div>
             </div>
         );

@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nickname {
+    margin-bottom: 12px;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.user_card_image {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.user_card_detail_container {
+    margin-left: 20px;
+}
+
+.user_card_detail_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #6A637C;
+}
+
+.user_card_detail_item > p {
+    margin-left: 8px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .user_card_detail {
+        margin-left: 0;
+    }
+}

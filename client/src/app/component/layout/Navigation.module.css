@@ -1,8 +1,16 @@
 .container {
-    width: 164px;
+    position: fixed;
+    top: 52px;
+    left: 0;
+    z-index: 2;
+    min-width: 164px;
+    max-width: 165px;
+    height: 100vh;
     padding-top: 24px;
     color: #525960;
     font-size: 13px;
+    border-right: 1px solid #e2e2e2;
+    background-color: #ffffff;
 }
 
 .ul_container {
@@ -28,6 +36,10 @@
     border-right: 3px solid #F48225;
 }
 
+.li_item:hover {
+    background-color: #E2E2E2;
+}
+
 .li_sub_item {
     display: flex;
     align-items: flex-end;
@@ -41,10 +53,4 @@
 .items_center {
     display: flex;
     align-items: center;
-}
-
-@media screen and (max-width: 600px){
-    .container {
-        display: none;
-    }
 }

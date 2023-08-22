@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import SignInput from "@component/sign/SignInput";
-import Button from "@component/sign/Button";
+import Button from "@component/common/Button";
 import styles from "../SignForm.module.css";
 
 function SignInForm() {

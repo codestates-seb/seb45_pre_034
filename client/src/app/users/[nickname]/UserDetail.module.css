@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 24px;
+}
+
+.user_card_container {
+    width: 100%;
+    margin-bottom: 32px;
+}

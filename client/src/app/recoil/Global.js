@@ -8,3 +8,18 @@ export const userinfo = atom({
         profile: "",
     },
 });
+
+export const followingState = atom({
+    key: 'followingState',
+    default: false,
+});
+
+export const sortState = atom({
+    key: 'sortState',
+    default: '',
+})
+
+export const navShow = atom({
+    key: "navShow",
+    default: false,
+});
