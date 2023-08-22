@@ -1,9 +1,13 @@
 .under_header_container{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     margin-top: 52px;
 }
 
 .with_navigation {
+    width: calc(100% - 164px);
     margin-left: 164px;
 }
 
