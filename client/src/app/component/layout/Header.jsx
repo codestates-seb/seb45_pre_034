@@ -13,7 +13,7 @@ import SearchInput from "@component/common/SearchInput";
 
 import IconStackOverflow from "/public/icon_stackoverflow.png";
 import IconStackOverflowMini from "/public/icon_stackoverflow_mini.png";
-import IconDefaultUser from "/public/icon_default_user.png";
+// import IconDefaultUser from "/public/icon_default_user.png";
 import styles from "./Header.module.css";
 
 import { FiMenu } from "react-icons/fi";
@@ -52,6 +52,7 @@ function Header() {
     };
 
     const renderBtnsByAuth = () => {
+        const IconDefaultUser = `${process.env.NEXT_PUBLIC_S3_HOST}/icon_default_user.png`;
         if (defaultUserInfo.nickname) {
             return (
                 <>
