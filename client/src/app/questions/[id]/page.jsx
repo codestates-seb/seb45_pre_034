@@ -1,4 +1,3 @@
-"use client";
 import AnswerList from "@component/answer/AnswerList";
 import Layout from "@component/layout/Layout";
 import QuestionPost from "@component/questions/QuestionPost";
