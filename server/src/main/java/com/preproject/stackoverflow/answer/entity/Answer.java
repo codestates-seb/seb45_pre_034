@@ -27,6 +27,9 @@ public class Answer {
 //    @JoinColumn(name = "userId")
 //    private User user;
 
+    @Column(nullable = false)
+    private Integer userId;
+
     @Column(name="body", nullable = false)
     private String body;
 

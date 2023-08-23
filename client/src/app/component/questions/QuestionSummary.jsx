@@ -1,9 +1,11 @@
-"use client";
-
 import Link from "next/link";
 import styles from "@component/questions/QuestionSummary.module.css";
+import { usePathname } from "next/navigation";
 
-function QuestionSummary() {
+function QuestionSummary({ data }) {
+    console.log(data);
+    const propData = data;
+
     return (
         <div className={styles.container}>
             <div className={styles.summary}>
@@ -22,24 +24,23 @@ function QuestionSummary() {
                     </div>
                 </div>
                 <div>
-                    <Link href="/questions/post">
-                        <h3 className={styles.h3}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, magni. Autem tempora magnam
-                            dicta! Ipsa dolores et architecto voluptas
-                        </h3>
+                    <Link href={`/questions/${propData.id}`}>
+                        <h3 className={styles.h3}>{propData.title}</h3>
                     </Link>
 
                     <div className={styles.meta}>
-                        <ul className={styles.ul_tag}>
-                            <li>sql</li>
-                            <li>sql-server</li>
-                            <li>sql-like</li>
-                        </ul>
+                        {propData ? (
+                            <ul className={styles.ul_tag}>
+                                {propData.tags.map((el, idx) => (
+                                    <li key={idx}>{el}</li>
+                                ))}
+                            </ul>
+                        ) : null}
 
                         <div className={styles.user_card}>
-                            <div>
+                            {/* <div>
                                 <img src="" alt="유저 아바타" />
-                            </div>
+                            </div> */}
                             <div>
                                 <a href="#">유저 닉네임</a>
                             </div>
