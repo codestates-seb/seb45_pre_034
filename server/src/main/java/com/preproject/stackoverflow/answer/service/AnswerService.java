@@ -62,7 +62,7 @@ public class AnswerService {
      * @return QuestionId로 찾아진 전체 리스트
      */
     public List<Answer> findQuestionAnswer(int questionId){
-        List<Answer> answerList = answerRepository.findAllByQuestionId(questionId);
+        List<Answer> answerList = answerRepository.findAllByQuestion_QuestionId(questionId);
         return answerList;
     }
 
