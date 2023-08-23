@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    margin: 1rem 0;
+}
+.container div:first-child span{
+    margin: 0.25rem;
+}
+
+.actions {
+    flex-grow: 1;
+    display: flex;
+    font-size: 13px;
+    
+}
+.actions div {
+    margin: 4px;
+}
+
+.user_info{ 
+    width: 200px;
+    padding: 5px 6px 7px 7px;
+}
+
+.signature_owner .user_info  {
+    border-radius: 4px;
+    background-color: #D9EAF7;
+}
+
+.user_info div:first-child {
+    font-size: 12px;
+}
+.user_info div:last-child {
+    font-size: 13px;
+}
