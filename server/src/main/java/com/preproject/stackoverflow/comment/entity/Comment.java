@@ -1,9 +1,14 @@
 package com.preproject.stackoverflow.comment.entity;
 
+import com.preproject.stackoverflow.security.auth.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Where;
+import com.preproject.stackoverflow.answer.entity.Answer;
+
+import com.preproject.stackoverflow.question.entity.Question;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -17,19 +22,19 @@ public class Comment{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer commentId;
-    /*
+
     @ManyToOne
     @JoinColumn(name = "userId")
-    private User nickname;
+    private Member member;
 
     @ManyToOne
     @JoinColumn(name = "questionId")
-    private Question questionId;
+    private Question question;
 
     @ManyToOne
     @JoinColumn(name = "answerId")
-    private Answer answerId;
-    */
+    private Answer answer;
+
     @Column(name="body", nullable = false)
     private String body;
 
@@ -38,27 +43,4 @@ public class Comment{
 
     @Column(name = "modifiedAt")
     private LocalDateTime modifiedAt = LocalDateTime.now();
-
-    /*
-    public void setUser(User user) {
-        this.user = user;
-        if (!user.getQuestionCommentList().contains(this)) {
-            user.getQuestionCommentList().add(this);
-        }
-    }
-
-    public void setQuestion(Question question) {
-        this.question = question;
-        if (!question.getQuestionCommentList().contains(this)) {
-            question.getQuestionCommentList().add(this);
-        }
-    }
-
-    public void setAnswer(Answer answer) {
-        this.answer = answer;
-        if (!answer.getAnswerCommentList().contains(this)) {
-            answer.getAnswerCommentList().add(this);
-        }
-    }
-    */
 }

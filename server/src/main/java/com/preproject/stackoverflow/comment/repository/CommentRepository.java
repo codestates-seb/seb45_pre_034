@@ -1,10 +1,8 @@
 package com.preproject.stackoverflow.comment.repository;
 
 import com.preproject.stackoverflow.comment.entity.Comment;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
-
-public interface CommentRepository extends CrudRepository<Comment, Integer> {
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
 
 }

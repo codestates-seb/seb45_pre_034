@@ -14,8 +14,9 @@ import java.io.Serializable;
 @Getter
 public class CommentPostDto implements Serializable {
     @NotNull
-    private Integer nickname;
+    private Integer userId;
     private Integer questionId;
+    private Integer answerId;
     @NotBlank(message = "댓글 내용을 작성해야 합니다.")
     private String body;
 }
