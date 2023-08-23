@@ -1,0 +1,4 @@
+.gippie {
+    max-height: 200px;
+    overflow: auto; /* 내용이 넘칠 때 스크롤 표시 */
+}
