@@ -1,8 +1,11 @@
 package com.preproject.stackoverflow.comment.service;
 
-import org.springframework.stereotype.Service;
+import com.preproject.stackoverflow.comment.entity.Comment;
 
-@Service
-public class CommentService {
+public interface CommentService {
+    Comment createComment(Comment comment);
 
+    Comment updateComment(Comment comment);
+
+    void deleteComment(Integer commentId);
 }

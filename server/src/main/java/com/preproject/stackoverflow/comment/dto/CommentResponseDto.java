@@ -15,9 +15,9 @@ import java.time.LocalDateTime;
 @Getter
 public class CommentResponseDto implements Serializable {
     @NotNull
-    private Integer CommentId;
+    private Integer commentId;
     @NotNull
-    private Integer nickname;
+    private Integer UserId;
     private Integer questionId;
     private Integer answerId;
     private String body;
