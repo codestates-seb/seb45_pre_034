@@ -3,9 +3,9 @@
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import styles from "./toggleView.module.css";
+import styles from "./ToggleView.module.css";
 
-function toggleView({ nickname }) {
+function ToggleView({ nickname }) {
     const router = useRouter();
     const pathname = usePathname();
     const [selectedItem, setSelectedItem] = useState("Activity");
@@ -48,4 +48,4 @@ function toggleView({ nickname }) {
     );
 }
 
-export default toggleView;
+export default ToggleView;
