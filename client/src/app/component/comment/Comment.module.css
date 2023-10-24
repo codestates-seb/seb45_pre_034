@@ -1,0 +1,15 @@
+.flex {
+    display: flex;
+}
+.block {
+    display: block;
+}
+.input{
+    width: 25rem;
+    height: 5rem;
+    border: 1px solid gainsboro;
+    white-space:wrap;
+}
+.input:focus{
+    box-shadow: 2px 2px 6px blue;
+}

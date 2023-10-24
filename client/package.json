@@ -1,0 +1,29 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.15.0"
+  },
+  "scripts": {
+    "debug": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@uiw/react-md-editor": "^3.6.0",
+    "easymde": "^2.18.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.13",
+    "moment": "^2.29.4",
+    "next": "13.4.13",
+    "next-remove-imports": "^1.0.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "recoil": "^0.7.7"
+  }
+}

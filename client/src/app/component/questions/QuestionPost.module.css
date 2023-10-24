@@ -1,0 +1,42 @@
+.article {
+    padding: 2rem;
+    /* max-width: 1100px */
+}
+
+.header {
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #F8F8F9;
+}
+
+.header h1 {
+    font-weight: 400;
+    font-size: 27px;
+    margin-bottom: 0.5rem;
+}
+
+.meta {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+.meta > div{
+    margin: 0 1rem 0.5rem 0;
+}
+.meta > div span:first-child{
+    margin: 2px;
+}
+
+.section {
+    /* max-width: 660px; */
+}
+
+.post_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+}
+
+.vote_cell {
+    padding-right: 1rem;
+}

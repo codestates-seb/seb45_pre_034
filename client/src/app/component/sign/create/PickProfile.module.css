@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.img_container {
+    width: 96px;
+    height: 96px;
+    margin-right: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px #dfdfdf;
+}
+
+.input_container {
+    flex: 1;
+    padding: 4px;
+}
+
+.label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0C0D0E;
+    margin-bottom: 4px;
+}
+
+.sub_label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #3B4045;
+    margin-bottom: 12px;
+}
+
+.vanish_style {
+    display: none;
+}
+
+.file_input {
+    width: fit-content;
+    height: 26px;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #39739D;
+    background-color: #E1ECF4;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+}

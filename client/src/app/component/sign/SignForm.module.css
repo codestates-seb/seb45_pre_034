@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    padding: 24px;
+    margin: 24px 0 36px 0;
+    border: 1px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 2px #dfdfdf;
+}
+
+.guide_msg {
+    margin-top: 32px;
+    color: #727177;
+    font-size: 13px;
+}
+
+.mini_logo {
+    width: 40px;
+    height: 40px;
+}
+
+.pw_guide_container {
+    position: relative;
+}
+
+.link_tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #0074CC;
+    cursor: pointer;
+    /* position: absolute 설정으로 클릭이 불가한 부분을 해결하기 위한 z-index */
+    z-index: 1;
+}

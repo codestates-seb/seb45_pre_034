@@ -1,0 +1,30 @@
+.section {
+    width: 720px;
+    padding: 1.5rem;
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 27px;
+    font-weight: 400;
+    flex-grow: 1;
+    margin: 0 12px 12px 0;
+}
+
+.inner_header_wrap {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 12px;
+}
+
+.sortHandler_container {
+    display: flex;
+    justify-content: right;
+}
+
+.summary_list {
+    list-style: none;
+}

@@ -1,0 +1,63 @@
+.container {
+    position: relative;
+}
+
+.label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0C0D0E;
+    margin-bottom: 4px;
+}
+
+.sub_label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #3B4045;
+}
+
+.sign_input {
+    width: 100%;
+    height: 34px;
+    padding: 4px;
+    margin: 8px 0 16px 0;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+.sign_input:focus {
+    border-color: #a8d6e9;
+    box-shadow: 0 0 10px 2px #a8c9e9;
+}
+
+.wrong_value {
+    border-color: #e9a8a8;
+    box-shadow: 0 0 10px 2px #e9a8a8b4;
+}
+
+.sub_guide_msg_container {
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 5px;
+    width: calc(100% - 5px);
+    height: fit-content;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #a8c9e9;
+    font-size: 12px;
+}
+
+.sub_guide_msg_container::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    border-bottom: 10px solid #a8c9e9;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}

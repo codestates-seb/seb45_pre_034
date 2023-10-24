@@ -1,0 +1,25 @@
+.btn_container {
+    width: fit-content;
+    height: 33px;
+    margin-right: 4px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn_primary {
+    color: #ffffff;
+    background-color: #0A95FF;
+}
+
+.btn_secondary {
+    color: #39739D;
+    background-color: #E1ECF4;
+}
+
+.btn_tirtiary {
+    color: #FF2222;
+    background-color: #ffffff;
+    border: 1px solid #FF2222;
+}
